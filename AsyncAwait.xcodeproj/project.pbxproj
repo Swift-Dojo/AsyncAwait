@@ -14,18 +14,10 @@
 		F246705B26756D320005B580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F246705A26756D320005B580 /* Assets.xcassets */; };
 		F246705E26756D320005B580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F246705C26756D320005B580 /* LaunchScreen.storyboard */; };
 		F246706926756D330005B580 /* AsyncAwaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246706826756D330005B580 /* AsyncAwaitTests.swift */; };
-		F246707326756D330005B580 /* AsyncAwaitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246707226756D330005B580 /* AsyncAwaitUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F246706526756D330005B580 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F246704626756D290005B580 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F246704D26756D290005B580;
-			remoteInfo = AsyncAwait;
-		};
-		F246706F26756D330005B580 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F246704626756D290005B580 /* Project object */;
 			proxyType = 1;
@@ -45,8 +37,6 @@
 		F246705F26756D320005B580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F246706426756D330005B580 /* AsyncAwaitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncAwaitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F246706826756D330005B580 /* AsyncAwaitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTests.swift; sourceTree = "<group>"; };
-		F246706E26756D330005B580 /* AsyncAwaitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncAwaitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F246707226756D330005B580 /* AsyncAwaitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F246706B26756D330005B580 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,7 +62,6 @@
 			children = (
 				F246705026756D290005B580 /* AsyncAwait */,
 				F246706726756D330005B580 /* AsyncAwaitTests */,
-				F246707126756D330005B580 /* AsyncAwaitUITests */,
 				F246704F26756D290005B580 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +71,6 @@
 			children = (
 				F246704E26756D290005B580 /* AsyncAwait.app */,
 				F246706426756D330005B580 /* AsyncAwaitTests.xctest */,
-				F246706E26756D330005B580 /* AsyncAwaitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,14 +95,6 @@
 				F246706826756D330005B580 /* AsyncAwaitTests.swift */,
 			);
 			path = AsyncAwaitTests;
-			sourceTree = "<group>";
-		};
-		F246707126756D330005B580 /* AsyncAwaitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F246707226756D330005B580 /* AsyncAwaitUITests.swift */,
-			);
-			path = AsyncAwaitUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,24 +135,6 @@
 			productReference = F246706426756D330005B580 /* AsyncAwaitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F246706D26756D330005B580 /* AsyncAwaitUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F246707C26756D330005B580 /* Build configuration list for PBXNativeTarget "AsyncAwaitUITests" */;
-			buildPhases = (
-				F246706A26756D330005B580 /* Sources */,
-				F246706B26756D330005B580 /* Frameworks */,
-				F246706C26756D330005B580 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F246707026756D330005B580 /* PBXTargetDependency */,
-			);
-			name = AsyncAwaitUITests;
-			productName = AsyncAwaitUITests;
-			productReference = F246706E26756D330005B580 /* AsyncAwaitUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,10 +149,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					F246706326756D330005B580 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = F246704D26756D290005B580;
-					};
-					F246706D26756D330005B580 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = F246704D26756D290005B580;
 					};
@@ -218,7 +169,6 @@
 			targets = (
 				F246704D26756D290005B580 /* AsyncAwait */,
 				F246706326756D330005B580 /* AsyncAwaitTests */,
-				F246706D26756D330005B580 /* AsyncAwaitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,13 +185,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F246706226756D330005B580 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F246706C26756D330005B580 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,14 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F246706A26756D330005B580 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F246707326756D330005B580 /* AsyncAwaitUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -284,11 +219,6 @@
 			isa = PBXTargetDependency;
 			target = F246704D26756D290005B580 /* AsyncAwait */;
 			targetProxy = F246706526756D330005B580 /* PBXContainerItemProxy */;
-		};
-		F246707026756D330005B580 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F246704D26756D290005B580 /* AsyncAwait */;
-			targetProxy = F246706F26756D330005B580 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -443,7 +373,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,7 +402,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -536,52 +466,6 @@
 			};
 			name = Release;
 		};
-		F246707D26756D330005B580 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D4ZUPHQCZR;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = swiftdojo.AsyncAwaitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AsyncAwait;
-			};
-			name = Debug;
-		};
-		F246707E26756D330005B580 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D4ZUPHQCZR;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = swiftdojo.AsyncAwaitUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AsyncAwait;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -608,15 +492,6 @@
 			buildConfigurations = (
 				F246707A26756D330005B580 /* Debug */,
 				F246707B26756D330005B580 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F246707C26756D330005B580 /* Build configuration list for PBXNativeTarget "AsyncAwaitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F246707D26756D330005B580 /* Debug */,
-				F246707E26756D330005B580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
